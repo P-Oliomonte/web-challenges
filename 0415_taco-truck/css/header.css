@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 40px;
+  color: var(--header-text);
+  background-color: var(--header-bg);
+  padding: 20px;
+}

@@ -1,0 +1,22 @@
+.card {
+  width: 450px;
+
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  padding: 20px;
+  list-style: none;
+  border-radius: 10px;
+}
+
+.ingredients {
+  font-weight: normal;
+  margin: 0;
+}
+
+.price {
+  margin: 0;
+}
+
+.ingredient-list {
+  margin: 0;
+}
