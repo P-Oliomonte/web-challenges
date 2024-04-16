@@ -21,6 +21,15 @@ body {
   background-color: rgb(255, 187, 0);
 }
 
+.button-delete {
+  color: #fff;
+  background-color: #d90000;
+}
+
+.button-delete:hover {
+  background-color: #9f0000;
+}
+
 .mathematical-operations {
   display: flex;
   flex-wrap: wrap;
