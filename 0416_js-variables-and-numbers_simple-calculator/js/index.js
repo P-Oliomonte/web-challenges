@@ -137,37 +137,31 @@ const divideByTwoButtonOp2 = document.querySelector(
 );
 
 increaseByOneButtonOp2.addEventListener("click", () => {
-  // 7. Increase the value of "operand1" by 1. Log the new value to the console.
   operand2++;
   console.log("Operand1:", operand1, "Operand2:", operand2);
 });
 
 increaseByFiveButtonOp2.addEventListener("click", () => {
-  // 8. Increase the value of "operand1" by 5. Log the new value to the console.
   operand2 = operand2 + 5;
   console.log("Operand1:", operand1, "Operand2:", operand2);
 });
 
 decreaseByOneButtonOp2.addEventListener("click", () => {
-  // 7. Decrease the value of "operand1" by 1. Log the new value to the console.
   operand2--;
   console.log("Operand1:", operand1, "Operand2:", operand2);
 });
 
 decreaseByFiveButtonOp2.addEventListener("click", () => {
-  // 8. Decrease the value of "operand1" by 5. Log the new value to the console.
   operand2 = operand2 - 5;
   console.log("Operand1:", operand1, "Operand2:", operand2);
 });
 
 multiplyByTwoButtonOp2.addEventListener("click", () => {
-  // 11. Multiply the value of "operand1" by 2. Log the new value to the console.
   operand2 = operand2 * 2;
   console.log("Operand1:", operand1, "Operand2:", operand2);
 });
 
 divideByTwoButtonOp2.addEventListener("click", () => {
-  // 12. Divide the value of "operand1" by 2. Log the new value to the console.
   operand2 = operand2 / 2;
   console.log("Operand1:", operand1, "Operand2:", operand2);
 });
