@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>Create your Personal Profiel Form</h1>
+    <form>
+      <p id="personal">
+        We want to get to know you! Please enter your personal information.
+      </p>
+      <fieldset aria-labelledby="personal">
+        <legend>Personal Information</legend>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required />
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required />
+        <label for="date-of-birth">Your Birthday:</label>
+        <input type="date" id="date-of-birth" name="date-of-birth" required />
+      </fieldset>
+      <p id="more-info">
+        Can you tell us a bit more about you? We want to annoy you with unwanted
+        ads.
+      </p>
+      <fieldset aria-labelledby="more-info">
+        <legend>Further Information</legend>
+        <label for="color-picker">Favourite Color:</label>
+        <input type="color" id="color-picker" name="color-picker" required />
+        <label for="favourite-pet">What's your favourite pet?</label>
+        <select name="favourite-pet" id="favourite-pet" required>
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="budgie">Budgie</option>
+          <option value="Parrot">Parrot</option>
+          <option value="horse">Horse</option>
+          <option value="lizard">Lizard</option>
+          <option value="monkey">Monkey</option>
+          <option value="hippo">Hippo</option>
+        </select>
+      </fieldset>
+      <button type="submit" name="submit-button">Submit</button>
+    </form>
+  </body>
+</html>
