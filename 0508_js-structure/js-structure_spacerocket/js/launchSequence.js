@@ -2,15 +2,26 @@
 import { loadPayload } from "./core/load.js";
 import { NFSAT, FISHSAT } from "./payload/satellites.js";
 import { fuel } from "./core/fuel.js";
-import { rocket } from "./core/rocket.js";
+import { countdown } from "./core/countdown.js";
+import { liftoff } from "./core/liftoff.js";
+import { deployPayload } from "./core/deploy.js";
 
-console.log(NFSAT.id);
-console.log(FISHSAT.id);
+console.log(NFSAT);
+console.log(FISHSAT);
 
-// export default function launch() {}
+export default function launch() {
+  loadPayload(NFSAT);
+  loadPayload(FISHSAT);
 
-loadPayload(NFSAT.id, FISHSAT.id);
+  fuel();
 
-fuel();
+  countdown();
+  countdown();
+  countdown();
+  countdown();
+  countdown();
 
-countdown(rocket.requiredCountdown);
+  liftoff();
+
+  deployPayload();
+}
