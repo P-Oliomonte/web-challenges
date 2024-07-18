@@ -88,9 +88,17 @@ export default function DetailPage() {
             disabled={isEdit}
           />
         </StyledButtonContainer>
-        {isEdit && <ProductForm onSubmit={handleUpdate} value={product} />}
+        {isEdit && (
+          <ProductForm
+            onSubmit={handleUpdate}
+            value={product}
+            cancelValue={toggleIsEdit}
+          />
+        )}
       </StyledCard>
-      <StyledLink href="/products">Back to Overview</StyledLink>
+      <StyledLinkContainer>
+        <StyledLink href="/products">Back to Overview</StyledLink>
+      </StyledLinkContainer>
     </>
   );
 }
@@ -104,14 +112,27 @@ const StyledCard = styled.li`
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 10px;
+  box-shadow: 5px 5px #ccc;
 `;
 
-const StyledLink = styled(Link)`
-  padding-left: 20px;
-  display: block;
-`;
+// const StyledLink = styled(Link)`
+
+// `;
 
 const StyledButtonContainer = styled.div`
   display: flex;
   gap: 20px;
+`;
+
+const StyledLink = styled(Link)`
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 2px;
+  text-decoration: none;
+`;
+
+const StyledLinkContainer = styled.div`
+  padding-top: 30px;
 `;

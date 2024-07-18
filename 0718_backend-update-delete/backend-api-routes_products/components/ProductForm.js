@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Button from "./Button";
 
-export default function ProductForm({ value, onSubmit }) {
+export default function ProductForm({ value, onSubmit, cancelValue }) {
   return (
     <>
       <StyledForm onSubmit={onSubmit}>
@@ -39,7 +39,16 @@ export default function ProductForm({ value, onSubmit }) {
             <option value="GBR">GBR</option>
           </select>
         </FormElementContainer>
-        <Button color="#EEE" type="submit" buttonText="Submit" />
+
+        <StyledButtonContainer>
+          <Button color="#EEE" type="submit" buttonText="Submit" />
+          <Button
+            color="#EEE"
+            type="button"
+            buttonText="Cancel"
+            onClick={cancelValue}
+          />
+        </StyledButtonContainer>
       </StyledForm>
     </>
   );
@@ -60,4 +69,10 @@ const FormElementContainer = styled.div`
   display: flex;
   justify-content: space-between;
   background-color: #dddddd;
+`;
+
+const StyledButtonContainer = styled.div`
+  display: flex;
+  gap: 20px;
+  padding-top: 15px;
 `;

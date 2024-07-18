@@ -14,7 +14,10 @@ export default function Button({ type, color, buttonText, onClick, disabled }) {
 }
 
 const StyledButton = styled.button`
-  padding: 5px;
+  font-family: "Signika", sans-serif;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 600;
   background-color: ${(props) => props.color};
   border: 1px solid #666;
   border-radius: 2px;
